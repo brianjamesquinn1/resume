@@ -1,0 +1,136 @@
+% Note: Requires Deedy Resume Package (deedy-resume.cls)
+\title{Brian Quinn – Professional Resume}
+\documentclass[letterpaper]{deedy-resume}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage[document]{ragged2e}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{flushleft}
+\Huge \center \textbf{Brian James Quinn}\\*
+\begin{small}
+\color{darkgray} \textbf{Github:} \color{gray} \url{github.com/brianjamesquinn1} | \url{github.com/blobmasterbrian}
+\vspace{-7mm}
+\textbf{\urlstyle{same}{\footnotesize \\ \url{}} \href{mailto:brianjamesquinn1@gmail.com}{\underline} brianjamesquinn1@gmail.com | +1 (406) 407-2294}
+\end{small}
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.31\textwidth} 
+
+\section{Education} 
+\subsection{New York University}
+\descript{B.S. Computer Science}
+\location{Polytechnic School of Engineering}
+\sectionspace
+
+\section{Integrations}
+\subsection{Third Party Integrations}
+\descript{\small Payment Processors}
+Stripe \\
+Braintree \\
+Modern Treasury \\
+ACHQ \\
+SVB \\
+Orum \\
+\sectionspace
+
+\descript{\small Verification Providers}
+Plaid \\
+\sectionspace
+
+\descript{\small Loan Origination/Management Systems}
+Loanpro \\
+Digifi \\
+\sectionspace
+
+\descript{\small Lending Marketplaces}
+LendingTree \\
+MyAutoLoan \\
+Solera \\
+Westlake \\
+\sectionspace
+
+\section{Skills}
+\subsection{Programming}
+\descript{\small Languages \qquad Technologies}
+\begin{tabbing}
+Go ~~~~~~~~~~~~~~~~~~~~~~~~ \=Serverless \\
+TS/JS                       \> Docker \\
+C/C++                       \> Kubernetes \\
+Java                        \> PubSub \\
+Python                      \> Redis \\
+SQL                         \> AWS/GCP \\
+\end{tabbing}
+
+\end{minipage} 
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.68\textwidth} 
+
+
+
+\section{Experience}
+\runsubsection{Tenet} |\descript{\small Director of Engineering / Staff Software Engineer}
+\location{Remote}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Rearchitected all data models in the database starting day 1 of joining the company. \\
+\item Designed the architecture of the entire platform, separating technological services to reflect their business domains. \\
+\item Derisked the company from existential failure by interfacing our integrations. This allowed me to migrate our entire banking infrastructure over a single weekend during the SVB collapse resulting in 0 downtime for servicing loans and payments. \\
+\item Delivered key partnerships that were critical to the successful funding of our Series A. \\
+\item Implemented process on the executive level to increase company efficiency/outcomes. Created PRD, vendor analysis, etc templates to make data driven decisions about what projects to pursue. \\
+\item Led the engineering organization to deliver on key objectives required to secure a partnership with the US Department of Energy. \\
+
+\end{tightitemize}
+\sectionspace 
+
+\runsubsection{Bread} |\descript{\small Senior Software Engineer – Payments}
+\location{Remote}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Designed and built a microservice that processes all payments through the Bread platform (roughly \$1 million worth of payments per day). \\
+\item Integrated multiple third party providers to verify bank information and provide multiple different ways to process payments (Braintree, Stripe, Flinks, Giact, RBC, SVB, NACHA). \\
+\item Collaborated cross-functionally to provide an API to process payments across multiple other microservices. \\
+\item Primary owner/designer/programmer of multiple other microservices: payments, payments\_jobs, debt\_consolidation, debt\_consolidation\_jobs, collections, collections\_jobs, airflow\_dags. \\
+\item Engineered multiple successful A/B test experiments driving revenue through increasing conversion rates. \\
+\item Implemented texting functionality throughout our system which drove a 9\% increase in take rate along with a 12\% increase in conversion rate. Results were statistically significant. (p-value < .01) \\
+\item Company sold for \textasciitilde{}1/2 billion dollars. \\
+
+\end{tightitemize}
+\sectionspace 
+
+\runsubsection{Dailymotion} |\descript{\small Software Engineer}
+\location{New York, NY}
+%\vspace{\topsep}
+\begin{tightitemize}
+\item Developed features on a distributed adserver which runs a networked auction in 200 ms. \\
+\item Redesigned, refactored, developed, and maintained the infrastructure for the automation framework. \\
+
+
+\end{tightitemize}
+\sectionspace 
+
+\runsubsection{Amazon Web Services} |\descript{\small Software Development Engineer Intern}
+\location{Seattle, WA}
+\begin{tightitemize}
+\item Processed/moved petabytes of archive data from the Glacier architecture onto S3 via a multithreaded process. \\
+\item Verified the integrity of the moved data, queued failures for retry, and tracked performance metrics via a subsequent multithreaded process. \\
+\end{tightitemize}
+\sectionspace 
+
+\end{minipage}
+
+\end{document}
